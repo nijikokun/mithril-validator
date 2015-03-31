@@ -9,4 +9,3 @@ script: npm test
 after_script:
 - make coverage
 - make codeclimate
-- make coveralls
