@@ -1,0 +1,35 @@
+{
+  "name": "mithril-validator",
+  "version": "1.0.0",
+  "description": "Easily validate Mithril.js forms, models, and objects.",
+  "main": "mithril.validator.js",
+  "scripts": {
+    "test": "make test"
+  },
+  "keywords": [
+    "mithril",
+    "form",
+    "validation",
+    "validate",
+    "validator",
+    "model",
+    "object",
+    "input",
+    "textarea",
+    "checkbox",
+    "dropdown",
+    "json",
+    "plugin",
+    "errors",
+    "helper"
+  ],
+  "author": "Nijiko Yonskai <nijikokun@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "mithril": "^0.1.30",
+    "codeclimate-test-reporter": "0.0.4",
+    "coveralls": "^2.11.2",
+    "istanbul": "^0.3.8",
+    "mocha": "^2.2.1"
+  }
+}
