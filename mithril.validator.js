@@ -1,9 +1,13 @@
-/**
- * Plugin Constructor
- *
- * @param {Object} m Mithril
- */
-function Plugin (m) {
+(function (plugin) {
+  /* istanbul ignore next: differing implementations */
+  if (typeof module !== 'undefined' && module !== null && module.exports) {
+    module.exports = plugin
+  } else if (typeof define === 'function' && define.amd) {
+    define(['mithril'], plugin)
+  } else if (typeof window !== 'undefined') {
+    plugin(m)
+  }
+})(function MithrilValidator (m) {
   if (m.validator) {
     return m
   }
@@ -93,13 +97,4 @@ function Plugin (m) {
 
   // Return patched mithril
   return m
-}
-
-/* istanbul ignore next: differing implementations */
-if (typeof module !== 'undefined' && module !== null && module.exports) {
-  module.exports = Plugin
-} else if (typeof define === 'function' && define.amd) {
-  define(['mithril'], Plugin)
-} else if (typeof window !== 'undefined') {
-  Plugin(m)
-}
+})

@@ -1,6 +1,6 @@
 {
   "name": "mithril-validator",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Easily validate Mithril.js forms, models, and objects.",
   "main": "mithril.validator.js",
   "scripts": {
